@@ -1,0 +1,88 @@
+.groupsBlock {
+  margin-top: 3rem;
+}
+
+.groups {
+  margin-top: 5rem;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.groupHeader {
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffac08;
+}
+
+.groupPoint {
+  list-style-type: none;
+  transition: all 0.5s;
+}
+
+.groupPoint:hover {
+  transform: translateX(1rem);
+  transition: all 0.5s;
+}
+
+.groupPoint span {
+  font-size: 1.6rem;
+  margin: 1rem;
+  color: white;
+  transition: all 0.5s;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+.wrapper {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.interest {
+  list-style-type: none;
+  transition: all 0.5s;
+}
+
+.interest:hover {
+  transform: translateX(1rem);
+  transition: all 0.5s;
+}
+
+.interest span {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  margin: 1rem;
+  color: white;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.groupPoint span:hover,
+.interest span:hover {
+  color: #ffac08;
+  transition: all 0.5s;
+}
+@media screen and (min-width: 600px) {
+  .wrapper {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 900px) {
+  .wrapper {
+    width: 30%;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .wrapper {
+    width: 22%;
+  }
+}

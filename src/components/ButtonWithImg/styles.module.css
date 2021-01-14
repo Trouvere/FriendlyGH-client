@@ -1,0 +1,45 @@
+.btn {
+  font-size: 1rem;
+  padding-right: 1rem;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  background: #44b5f6;
+  border: 3px solid rgb(255, 255, 255);
+  width: 100%;
+  height: 5rem;
+  border-radius: 1rem;
+  outline: hidden;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+}
+.btn:focus {
+  outline: 1px solid #f8ac28d3;
+  outline-style: dashed;
+}
+.active {
+  color: #f5d49b;
+  border: 3px solid #f8ac28d3;
+}
+
+.imgBtn {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  left: 1rem;
+}
+
+@media screen and (min-width: 460px) {
+  .btn {
+    font-size: 1.5rem;
+  }
+
+  .imgBtn {
+    position: absolute;
+    left: 1rem;
+  }
+}

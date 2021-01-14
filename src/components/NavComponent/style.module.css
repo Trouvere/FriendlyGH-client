@@ -1,0 +1,21 @@
+.navBlock {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.navLink {
+  color: rgb(255, 255, 255);
+  font-size: 1.6rem;
+  margin-left: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: all 0.5s;
+  border-bottom: 5px solid #f9ab1000;
+}
+
+.activeNav {
+  color: rgb(255, 255, 255);
+  border-bottom: 3px solid #f9ac10;
+  transition: all 0.5s;
+}

@@ -1,0 +1,103 @@
+.header {
+  font-size: 2rem;
+  text-align: right;
+  color: #44b4f6;
+  padding-right: 2rem;
+}
+
+.interestBlocks {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.interests {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.headerInterests {
+  font-size: 2rem;
+  color: #44b4f6;
+}
+
+.wrapperEditBlockCustomInterests {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+}
+.btnWrapper {
+  width: 30rem;
+  height: 5rem;
+  margin: 1rem;
+}
+
+.wrapperSearchInput {
+  width: 30rem;
+  height: 5rem;
+  margin: 1rem;
+}
+@media screen and (min-width: 430px) {
+  .interests {
+    justify-content: flex-start;
+  }
+  .interestBlocks {
+    align-items: flex-start;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .header {
+    text-align: right;
+    padding: 2rem;
+    width: 100%;
+    height: 10rem;
+    background: linear-gradient(45deg, #ecf5fc00 15%, #4f5ff1 15%, #44b4f6);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20rem;
+  }
+
+  .header h2 {
+    font-size: 3rem;
+    color: #ffab08;
+  }
+
+  .groupsBlock {
+    margin-top: 3rem;
+  }
+
+  .groups {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 90%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .groupHeader {
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffac08;
+  }
+
+  .headerInterests {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+
+  .interestBlocks {
+    margin: 1rem;
+  }
+
+  .interests {
+    gap: 2rem;
+  }
+}

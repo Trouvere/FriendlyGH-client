@@ -1,0 +1,23 @@
+.contentWrapper {
+  width: 100%;
+  height: fit-content;
+  min-height: calc(100vh - 10rem);
+  max-width: 2000px;
+  margin: 0 auto;
+}
+
+.phone {
+  background-image: url(assets/img/icons/phone.svg);
+}
+
+.skype {
+  background-image: url(assets/img/icons/skype.svg);
+}
+
+.linkedIn {
+  background-image: url(assets/img/icons/linkedin.svg);
+}
+
+.telegram {
+  background-image: url(assets/img/icons/telegram.svg);
+}

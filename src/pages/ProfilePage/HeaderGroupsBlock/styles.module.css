@@ -1,0 +1,26 @@
+.header {
+  text-align: right;
+  padding: 2rem;
+  width: 100%;
+  height: 10rem;
+  background: linear-gradient(45deg, #ecf5fc00 25%, #4f5ff1 25%, #44b4f6);
+}
+
+.header h2 {
+  font-size: 3rem;
+  color: #ffab08;
+}
+@media screen and (min-width: 600px) {
+  .header {
+    text-align: right;
+    padding: 2rem;
+    width: 100%;
+    height: 10rem;
+    background: linear-gradient(45deg, #ecf5fc00 15%, #4f5ff1 15%, #44b4f6);
+  }
+
+  .header h2 {
+    font-size: 3rem;
+    color: #ffab08;
+  }
+}

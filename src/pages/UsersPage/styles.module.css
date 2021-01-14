@@ -1,0 +1,70 @@
+.usersPage {
+  height: fit-content;
+  min-height: 100vh;
+  max-width: 100%;
+  margin: 0 auto;
+  background-image: url(../../assets/img/profile/background.webp);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+.wrapperSearch {
+  width: 100%;
+  background: linear-gradient(45deg, #4f5ff1, #44b5f6 100%, #fff0 40%);
+  padding-bottom: 0.5rem;
+  position: sticky;
+  top: 0;
+  border-radius: 0 0 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  z-index: 1;
+}
+.wrapperSearch h3 {
+  color: #ffab08;
+  font-size: 2.5rem;
+}
+.wrapperSearchInput {
+  width: 20rem;
+  height: 5rem;
+}
+.wrapperUsersBlock {
+  padding: 2rem;
+}
+.cardBlock {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  flex-wrap: wrap;
+}
+@media (min-width: 600px) {
+  .usersPage {
+    max-width: none;
+    flex-direction: row;
+  }
+  .wrapperSearch {
+    max-width: 30rem;
+    min-width: 25rem;
+    height: 40rem;
+    gap: 2rem;
+    padding-top: 5rem;
+    margin-top: 8rem;
+    padding-bottom: 2rem;
+    border-radius: 0 2rem 2rem 0;
+    z-index: 0;
+  }
+  .wrapperSearchInput {
+    width: 20rem;
+    height: 5rem;
+  }
+  .wrapperUsersBlock {
+    padding: 8rem;
+    width: 80%;
+  }
+  .wrapperSearch h3 {
+    color: #ffab08;
+    font-size: 3rem;
+    margin-left: 1.5rem;
+  }
+}

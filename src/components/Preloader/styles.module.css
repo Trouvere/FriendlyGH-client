@@ -1,0 +1,8 @@
+.preloader {
+  width: 15rem;
+  height: 2rem;
+  background-image: url('../../assets/img/preloaderbtn.svg');
+  background-size: 20%;
+  background-repeat: no-repeat;
+  background-position: 30% 50%;
+}

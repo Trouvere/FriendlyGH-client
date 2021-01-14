@@ -1,0 +1,78 @@
+.contactsBlock h3 {
+  font-size: 3rem;
+  color: #4c64f1;
+  margin-left: 1.5rem;
+}
+.contact {
+  position: relative;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  margin-right: 3.5rem;
+  margin-bottom: 2rem;
+}
+
+.contacts {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 700px) {
+  .contactsBlock {
+    margin-top: 3rem;
+    position: relative;
+    height: 10rem;
+    background: linear-gradient(45deg, #4f5ff1, #44b4f6 40%, #fff0 40%);
+    padding: 2rem;
+    transition: all 0.5s;
+  }
+
+  .contactsBlock h3 {
+    color: #ffab08;
+  }
+
+  .contacts {
+    padding-left: 10%;
+    width: 70%;
+    flex-wrap: wrap;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .contact {
+    padding-left: 5.5rem;
+    width: 35%;
+  }
+
+  .contactItem {
+    color: black;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+
+  .contactItem:hover {
+    color: rgb(139, 119, 0);
+    transition: all 0.5s;
+  }
+
+  .styleBeforeIcon {
+    min-width: 5rem;
+    min-height: 5rem;
+    margin-right: 1rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .contactsBlock {
+    height: 15rem;
+  }
+  .contacts {
+    width: 70%;
+  }
+}

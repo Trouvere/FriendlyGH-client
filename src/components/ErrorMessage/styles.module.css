@@ -1,0 +1,10 @@
+.errorMessage {
+  color: red;
+  font-weight: 500;
+}
+.inputError {
+  position: absolute;
+}
+.formError {
+  font-size: 1.5rem;
+}

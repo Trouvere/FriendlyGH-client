@@ -1,0 +1,13 @@
+.editButton {
+  font-size: 1.5rem;
+  color: rgb(210, 210, 255);
+  cursor: pointer;
+  transition: all 0.5s;
+  background-color: rgba(0, 0, 0, 0);
+  border: rgba(0, 0, 0, 0);
+  border: none;
+  outline: hidden;
+}
+.editButton:hover {
+  color: white;
+}

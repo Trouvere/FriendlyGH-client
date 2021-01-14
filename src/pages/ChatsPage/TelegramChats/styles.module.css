@@ -1,0 +1,170 @@
+.telegramRightBlock {
+  width: 0%;
+  padding: 0;
+  position: relative;
+}
+.recommendedImg {
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  right: 2rem;
+}
+.telegramPoints {
+  width: 100%;
+  position: relative;
+}
+.chatPoint {
+  width: 100%;
+  position: relative;
+  min-height: 10rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+
+.telegramPointBtn {
+  width: 90%;
+  height: 8rem;
+  font-size: 2rem;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  background-color: #c5c9ee3a;
+  transition: all 0.5s;
+  display: none;
+}
+.telegramPointBtn:focus {
+  outline: 3px solid #0a6599;
+}
+.smallWidget {
+  width: 100%;
+  height: 5rem;
+}
+
+.mediumWidget {
+  width: 25rem;
+  height: 23rem;
+}
+.telegramPointBtn:hover {
+  background-color: #44b5f6;
+  color: white;
+  transition: all 0.5s;
+}
+
+.activeChatPoint {
+  background-color: #44b5f6;
+  color: white;
+  transition: all 0.5s;
+}
+
+.telegram {
+  width: 55%;
+  height: 75vh;
+  position: fixed;
+  right: 5rem;
+  top: 15rem;
+}
+
+.telegramChats {
+  display: flex;
+}
+
+.telegramPoints::after {
+  content: '';
+  height: 70vh;
+  border-right: 2px solid rgba(128, 128, 128, 0.123);
+  position: fixed;
+  left: 40%;
+  top: 20vh;
+  display: none;
+}
+@media screen and (min-width: 600px) {
+  .chatPoint {
+    width: 40%;
+  }
+  .telegramPoints {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: start;
+    gap: 2rem;
+  }
+}
+@media screen and (min-width: 750px) {
+  .chatPoint {
+    width: 30%;
+  }
+  .telegramPoints {
+    gap: 1rem;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .chatPoint {
+    width: 100%;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.13);
+  }
+
+  .telegramPointBtn {
+    width: 50%;
+    height: 8rem;
+    font-size: 2rem;
+    display: block;
+  }
+  .smallWidget {
+    width: 100%;
+    display: block;
+  }
+
+  .telegramPointBtn:hover {
+    background-color: #44b5f6;
+    color: white;
+    transition: all 0.5s;
+  }
+
+  .activeChatPoint {
+    background-color: #44b5f6;
+    color: white;
+    transition: all 0.5s;
+  }
+
+  .telegram {
+    width: 50%;
+  }
+
+  .telegramChats {
+    display: flex;
+  }
+
+  .telegramPoints {
+    width: 40%;
+    padding: 2rem;
+    position: relative;
+  }
+
+  .telegramPoints::after {
+    content: '';
+    display: block;
+  }
+
+  .telegramRightBlock {
+    width: 55%;
+    padding: 1rem;
+    position: relative;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .telegram {
+    width: 55%;
+  }
+  .telegramPointBtn {
+    width: 65%;
+  }
+  .chatPoint {
+    gap: 1%;
+  }
+  .smallWidget {
+    width: 100%;
+  }
+}

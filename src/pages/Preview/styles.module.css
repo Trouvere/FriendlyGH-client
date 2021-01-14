@@ -1,0 +1,118 @@
+.priview {
+  background-color: #fff;
+  min-height: 100vh;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.welcomeBlock {
+  width: 100%;
+  text-align: center;
+}
+.nameApp {
+  font-size: 6rem;
+  color: #f4ad24;
+}
+.addText {
+  font-size: 3rem;
+  color: #44b4f6;
+}
+.toLogin {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+.nav {
+  color: rgb(159, 177, 255);
+  margin: 0 0.5rem;
+  transition: all 0.3s;
+}
+.nav:hover {
+  color: #f4ad24;
+  transition: all 0.3s;
+}
+.bacground {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bacgroundRigth {
+  height: 40vh;
+  width: 100%;
+  background-image: url('../../assets/img/preview/ilustracion-gente-joven_23-2148447957.jpg');
+  background-size: 100%;
+  background-position: 25%;
+  background-repeat: no-repeat;
+}
+@media screen and (min-width: 600px) {
+  .nameApp {
+    font-size: 8rem;
+  }
+  .addText {
+    font-size: 4rem;
+  }
+  .toLogin {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .bacgroundRigth {
+    width: 75%;
+  }
+  .bacground {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 950px) {
+  .bacgroundRigth {
+    width: 65%;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .bacgroundLeft {
+    height: 50vh;
+    width: 55%;
+    background-image: url('../../assets/img/preview/preview.jpg');
+    background-size: 90%;
+    background-position: -15% 60%;
+    background-repeat: no-repeat;
+  }
+  .bacgroundRigth {
+    height: 45vh;
+    width: 50%;
+    background-size: 100%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .priview {
+    padding: 10rem 5rem 0 5rem;
+  }
+
+  .nameApp {
+    font-size: 8rem;
+    margin: -1rem;
+  }
+  .addText {
+    font-size: 4rem;
+  }
+  .toLogin {
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+  .bacgroundLeft {
+    height: 40vh;
+    width: 60%;
+    background-size: 75%;
+    background-position: 10%;
+  }
+  .bacgroundRigth {
+    height: 40vh;
+    width: 50%;
+    background-size: 90%;
+    background-position: 35%;
+  }
+}

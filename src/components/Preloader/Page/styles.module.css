@@ -1,0 +1,10 @@
+.pagePreloader {
+  width: 40rem;
+  height: 40rem;
+  position: relative;
+  top: 15vw;
+  left: 45vw;
+  background-image: url('../../../assets/img/pagePreloader.svg');
+  background-size: 50%;
+  background-repeat: no-repeat;
+}

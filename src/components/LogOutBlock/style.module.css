@@ -1,0 +1,27 @@
+.logOutBlock {
+  display: flex;
+  gap: 1rem;
+  width: 10rem;
+  align-items: center;
+}
+.email {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+}
+
+.button {
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: all 0.5s;
+  padding: 0.5rem;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  outline: none;
+  box-shadow: -2px 0 0 white;
+}
+.button:hover {
+  color: rgb(255, 234, 234);
+}
