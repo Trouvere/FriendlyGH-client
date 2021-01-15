@@ -1,8 +1,8 @@
 import * as axios from 'axios';
 
 const instAxios = axios.create({
-  // baseURL: 'http://localhost:8080/api/',
-  baseURL: 'https://friendly-gh.herokuapp.com/api/',
+  baseURL: 'http://localhost:8080/api/',
+  // baseURL: 'https://friendly-gh.herokuapp.com/api/',
   headers: {
     'x-access-token': {
       toString() {
