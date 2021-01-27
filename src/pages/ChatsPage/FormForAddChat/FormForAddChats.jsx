@@ -70,19 +70,31 @@ const AddChatForm = ({ onSubmit }) => {
                 label="name chat"
                 name="name"
                 placeholder="name chat"
+                colorLabel="black"
               />
               <InputForFormik
                 label="link chat"
                 name="link"
                 placeholder="link"
+                colorLabel="black"
               />
               <InputForFormik
                 label="messenger"
                 name="messenger"
                 placeholder="messenger"
+                colorLabel="black"
               />
-              <InputForFormik label="id chat" name="id" placeholder="id" />
-              <SelectForFormik options={interestsIdsNames} name="interest" />
+              <InputForFormik
+                label="id chat"
+                name="id"
+                placeholder="id"
+                colorLabel="black"
+              />
+              <SelectForFormik
+                options={interestsIdsNames}
+                name="interest"
+                colorLabel="black"
+              />
               <div className={styles.buttonRow}>
                 <Button color="white" type="submit" isLoading={isFetching}>
                   add Chat

@@ -68,3 +68,15 @@
     margin-left: 1.5rem;
   }
 }
+.noResult {
+  font-size: 2rem;
+  color: #4f5ff1;
+}
+.noConnection {
+  display: flex;
+  justify-content: center;
+  margin-top: 25rem;
+  font-size: 2rem;
+  color: #4f5ff1;
+  padding: 5rem;
+}

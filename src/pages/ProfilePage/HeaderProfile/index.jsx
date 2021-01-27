@@ -8,7 +8,8 @@ const HeaderProfile = ({
   lastName,
   location,
   aboutMe,
-  roleInCompany
+  roleInCompany,
+  isOwner
 }) => {
   return (
     <div className={style.headerProfile}>
@@ -31,7 +32,7 @@ const HeaderProfile = ({
         </div>
         <div className={style.rightBlock}>
           <h3>About me</h3>
-          <p>{aboutMe || 'Set in edit profile'}</p>
+          <p>{aboutMe || (isOwner && 'Set in edit profile') || ''}</p>
         </div>
       </div>
     </div>
@@ -44,7 +45,8 @@ HeaderProfile.propTypes = {
   lastName: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
   aboutMe: PropTypes.string.isRequired,
-  roleInCompany: PropTypes.string.isRequired
+  roleInCompany: PropTypes.string.isRequired,
+  isOwner: PropTypes.bool.isRequired
 };
 
 export default HeaderProfile;

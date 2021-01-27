@@ -11,7 +11,12 @@ const Contact = ({ name }) => {
   return (
     <div className={style.contact}>
       <span className={classnames(style.styleBeforeIcon, name)} />
-      <InputForFormik name={name} placeholder={name} />
+      <InputForFormik
+        name={name}
+        placeholder={name}
+        label={name}
+        colorLabel="white"
+      />
     </div>
   );
 };

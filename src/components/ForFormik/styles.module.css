@@ -34,6 +34,18 @@
   position: absolute;
   font-size: 1.2rem;
 }
+.white {
+  color: white;
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+.black {
+  color: black;
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
 .radio input {
   margin: 1rem;
 }
@@ -42,6 +54,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  position: relative;
 }
 .checkboxBlock {
   width: 20rem;

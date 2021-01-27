@@ -11,19 +11,17 @@ import { inputForFromikValidation } from '../../plugins/validation';
 import { userApi } from '../../API';
 import { setLocation } from '../../store/reducers/LocationReducer';
 import { setRoleInCompany } from '../../store/reducers/RoleInCompanyReducer';
-import { setProfileStatus, setMe } from '../../store/reducers/ProfileReducer';
+import { refreshInformation, setMe } from '../../store/reducers/ProfileReducer';
 import useLocation from '../../plugins/Hooks/useLocation';
 import PopUp from '../../components/PopUp';
 import AddChatForm from './FormForAddCustomInterest/FormForAddCustomInterest';
-import { setUsersStatus } from '../../store/reducers/UsersReducer';
 
 const EditProfile = () => {
   const [isOpenPopUp, setIsOpenPopUp] = useState(false);
   const history = useHistory();
   const dispatch = useDispatch();
-  const changeStatus = (status) => {
-    dispatch(setProfileStatus(status));
-    dispatch(setUsersStatus(status));
+  const changeStatus = () => {
+    dispatch(refreshInformation());
   };
   const { roleDataStatus, profileDataStatus, locationDataStatus } = useSelector(
     (state) => ({
@@ -53,9 +51,9 @@ const EditProfile = () => {
   );
   const allLocations = useSelector((state) => state.locationData.allLocations);
   const {
-    id,
     firstName,
     lastName,
+    id,
     aboutMe,
     photo,
     roleInCompany,
@@ -101,24 +99,24 @@ const EditProfile = () => {
       <Formik
         enableReinitialize
         initialValues={{
-          firstName,
-          lastName,
-          aboutMe,
+          firstName: firstName || '',
+          lastName: lastName || '',
+          aboutMe: aboutMe || '',
           photo,
-          roleInCompany,
-          location,
+          roleInCompany: roleInCompany || '',
+          location: location || '',
           select: '',
           phone: contactsValue.phone,
           linkedIn: contactsValue.linkedIn,
           telegram: contactsValue.telegram,
           skype: contactsValue.skype,
           interests: interestsId,
-          gender
+          gender: gender || ''
         }}
         validationSchema={inputForFromikValidation}
         onSubmit={async (data) => {
           await userApi.updateUser(data);
-          await changeStatus('idle');
+          changeStatus();
           history.push(`/profile/${id}`);
         }}
       >

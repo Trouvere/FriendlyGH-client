@@ -22,6 +22,7 @@ const ProfilePage = ({ profileData, isOwner }) => {
         location={profileData.location || ''}
         aboutMe={profileData.aboutMe || ''}
         roleInCompany={profileData.roleInCompany}
+        isOwner={isOwner}
       />
       <Contacts contacts={profileData.contacts} />
       <InterestsBlock interests={profileData.interests} label="Interests" />

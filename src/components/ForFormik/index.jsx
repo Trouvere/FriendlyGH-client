@@ -1,14 +1,30 @@
 import React from 'react';
 import { useField } from 'formik';
 import PropTypes from 'prop-types';
+import classnames from 'classnames';
 import ErrorMessage from '../ErrorMessage';
 import styles from './styles.module.css';
 
-export const InputForFormik = ({ placeholder, label, ...props }) => {
+export const InputForFormik = ({
+  placeholder,
+  colorLabel,
+  label,
+  ...props
+}) => {
   const [field, meta] = useField(props);
   return (
     <div className={styles.wrapper}>
-      {label && <label htmlFor={label}>{label}</label>}
+      {label && (
+        <label
+          htmlFor={label}
+          className={classnames({
+            [styles.white]: colorLabel === 'white',
+            [styles.black]: colorLabel === 'black'
+          })}
+        >
+          {label}
+        </label>
+      )}
       <input className={styles.input} placeholder={placeholder} {...field} />
       {meta.touched && meta.error ? (
         <ErrorMessage className="error">{meta.error}</ErrorMessage>
@@ -83,11 +99,13 @@ export const RadioForFormik = ({ children, ...props }) => {
 
 InputForFormik.propTypes = {
   placeholder: PropTypes.string,
-  label: PropTypes.string
+  label: PropTypes.string,
+  colorLabel: PropTypes.oneOf(['white', 'black'])
 };
 InputForFormik.defaultProps = {
   placeholder: '',
-  label: ''
+  label: '',
+  colorLabel: 'white'
 };
 
 TextareaForFormik.propTypes = {

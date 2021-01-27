@@ -1,11 +1,9 @@
 /* eslint-disable prettier/prettier */
 import React from 'react';
-import { useSelector } from 'react-redux';
 import Contact from './Contact';
 import style from './styles.module.css';
 
-const Contacts = () => {
-  const contacts = useSelector((state) => state.profileData.profile.contacts);
+const Contacts = ({ contacts }) => {
   let contactsName = [];
   if (contacts) {
     contactsName = Object.keys(contacts);

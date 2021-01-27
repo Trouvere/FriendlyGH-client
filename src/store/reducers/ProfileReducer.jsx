@@ -1,6 +1,8 @@
 /* eslint-disable no-param-reassign */
 import { createSlice } from '@reduxjs/toolkit';
 import { userApi } from '../../API';
+import { setUsersStatus } from './UsersReducer';
+import { setRecommendedChatsStatus } from './RecommendedChatsReducer';
 
 const initialState = {
   profile: {
@@ -56,6 +58,11 @@ export const setMe = () => async (dispatch) => {
     error.clientMessage = "Can't get user profile";
     dispatch(setProfileError({ error }));
   }
+};
+export const refreshInformation = () => async (dispatch) => {
+  dispatch(setProfileStatus('idle'));
+  dispatch(setUsersStatus('idle'));
+  dispatch(setRecommendedChatsStatus('idle'));
 };
 
 export default profileSlice.reducer;

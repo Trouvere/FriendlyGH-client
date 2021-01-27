@@ -67,6 +67,7 @@ const UsersPage = ({ users, locations, genders }) => {
 
     return filterUsers;
   };
+
   const usersCard = searchItems(users).map((el) => (
     <UsersCard
       name={el.firstName}
@@ -128,7 +129,13 @@ const UsersPage = ({ users, locations, genders }) => {
         </div>
       </div>
       <div className={style.wrapperUsersBlock}>
-        <div className={style.cardBlock}>{usersCard}</div>
+        <div className={style.cardBlock}>
+          {usersCard.length === 0 ? (
+            <span className={style.noResult}>No results found</span>
+          ) : (
+            usersCard
+          )}
+        </div>
       </div>
     </div>
   );
